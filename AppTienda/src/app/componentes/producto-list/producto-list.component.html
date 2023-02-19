@@ -1,0 +1,20 @@
+<div class="col-md-4" *ngFor="let producto of productos" style="margin-bottom: 1.5rem;">
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+      {{producto.nombre}}
+      <button class="btn btn-danger" (click)="borrarProducto(producto.codigo)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <img [src]="producto.imagen" style="margin-left: auto; margin-right: auto; height: 300px;" alt="card-img-top">
+    <!-- <img [src]="producto.Imagen" width="300" height="230" alt="card-img-top"> -->
+    <div class="card-body">
+      <p>{{producto.precio}}</p>
+      <p>{{producto.cantidad}}</p>
+      <p>{{producto.descripcion}}</p>
+      <a [routerLink]="['/productos/actualizar', producto.codigo]" class="btn btn-info btn-block">
+        Editar Producto
+      </a>
+    </div>
+  </div>
+</div>

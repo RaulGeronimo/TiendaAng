@@ -1,0 +1,46 @@
+<div class="col-md-5 offset-md-3">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="card-body">
+          <input type="text" name="nombre" [(ngModel)]="producto.nombre" placeholder="Nombre:" class="form-control" autofocus>
+        </div>
+
+        <div class="card-body">
+          <input type="number" name="precio" [(ngModel)]="producto.precio" placeholder="Precio:" class="form-control">
+        </div>
+
+        <div class="card-body">
+          <input type="number" name="cantidad" [(ngModel)]="producto.cantidad" placeholder="Cantidad:"
+            class="form-control">
+        </div>
+
+        <div class="card-body">
+          <textarea name="descripcion" [(ngModel)]="producto.descripcion" rows="4"
+            placeholder="Escribe una descripcion del producto" class="form-control"></textarea>
+        </div>
+
+        <div class="card-body">
+          <input type="url" name="imagen" [(ngModel)]="producto.imagen" placeholder="Imagen:" class="form-control">
+        </div>
+
+        <button type="button" class="btn btn-success"
+          (click)="edit ? actualizaProducto() : addProducto()">
+          Aceptar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <img [src]="producto.imagen == '' ? '/assets/noImagen.png' : producto.imagen " class="card-img-top">
+    <h3 style="text-transform: uppercase;">
+      {{producto.codigo}} - {{producto.nombre == '' ? 'Nombre del Producto' : producto.nombre}}</h3>
+    <p>$ {{producto.precio == 0 ? 'Precio' : producto.precio}}</p>
+    <p>{{producto.cantidad == 0 ? 'Cantidad' : producto.cantidad}}</p>
+    <p>{{producto.descripcion == '' ? 'Descripción' : producto.descripcion}}</p>
+    <p>{{producto.fecha | date: 'yyyy-MM-dd HH:mm:ss'}}</p>
+  </div>
+</div>
