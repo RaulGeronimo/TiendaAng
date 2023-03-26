@@ -30,6 +30,7 @@ npm i
 cd Servidor # Ejecutar el Servidor
 npm run build
 npm run dev
+
 cd appTienda # Ejecutar la aplicacion
 ng serve --open
 ```
