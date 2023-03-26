@@ -1,8 +1,9 @@
 export default {
     database: {
         host: 'localhost',
-        user: 'root',
+        user: 'raul',
         password: '',
-        database: 'tiendaAngular'
+        database: 'tiendaAngular',
+        port: 33065
     }
 }
