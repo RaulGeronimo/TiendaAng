@@ -3,11 +3,11 @@ Código del proyecto “Tienda Angular” realizado con Angular, Typescript y No
 
 https://user-images.githubusercontent.com/94584093/227757053-145e9ae0-e54c-453f-be6e-1ff6c193384e.mp4
 
-Esta es una aplicación web básica para administrar una tienda utilizando tecnologías como Angular, Node, Typescript y MySQL.
+Esta es una aplicación web básica para administrar una tienda utilizando tecnologías como Angular, Node, TypeScript y MySQL.
 
 ### Tecnologias utilizadas: 
 - Angular
-- Typecript
+- TypeScript
 - NodeJS
 - Base de Datos MySQL
 
